@@ -43,7 +43,7 @@ body {
 
 .location p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #353535;
 }
 
@@ -188,6 +188,21 @@ body {
     margin-left: 17px;
     margin-right: 18px;
     margin-bottom: 18px;
+}
+
+.restaurants-cards span {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #008766;
+    padding-top: 7px;
+    padding-right: 9px;  
+    padding-bottom: 7px;
+    padding-left: 9px;
+    right: 5px; 
+    margin-right: 12px;
+    margin-top: 13px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .restaurants-cards img {
