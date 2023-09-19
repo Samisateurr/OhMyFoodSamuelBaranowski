@@ -107,6 +107,11 @@ body {
     color: grey;
 }
 
+.steps-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .grey-button {
     display: flex;
     flex-direction: row;
@@ -119,6 +124,7 @@ body {
     border-radius: 20px 20px;
     text-align: center;
     height: 72px;
+    width: 322px;
     line-height: 33px;
     white-space: nowrap;
 }
@@ -138,7 +144,7 @@ body {
     background-color: #9356dc;
     color: white;
     position: relative;
-    right: 28px;
+    right: 19px;
     height: 25px;   
     margin-top: 21px;
     padding: 2px 10px;
@@ -219,14 +225,28 @@ body {
     box-sizing: border-box;
 }
 
+.restaurants-cards-content-icon i {
+    position: absolute;
+    right: 27px;
+    bottom: 27px;
+}
+
+
 /****** Footer ***********/
 
 .footer-section {
+    background-color: #353535;
+    color: white;
     padding-left: 25px;
     padding-top: 22px;
     padding-right: 25px;
     padding-bottom: 22px;
 }
+
+.footer-section i {
+    padding-right: 10px;
+}
+
 
 /****** Media queries ***********/
 /* Medium devices (desktop, +/equal than 768 px) */
