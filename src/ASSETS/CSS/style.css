@@ -257,6 +257,31 @@ body {
     width: 100%;
 }
 
+.steps-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.second-section h2 {
+    text-align: center;
+}
+
+.restaurants-section h2 {
+    text-align: center;
+}
+
+.restaurants-section-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.footer-section {
+    text-align: center;
+}
+
 
 
 }
