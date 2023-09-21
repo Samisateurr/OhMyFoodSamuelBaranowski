@@ -182,7 +182,7 @@ a {
 .restaurants-section {
     background-color: #eeeeee94;
     margin-top: 68px;
-    margin-bottom: 80px;
+    padding-bottom: 66px;
 }
 
 .restaurants-section h2 {
@@ -276,6 +276,26 @@ a {
     padding-right: 10px;
 }
 
+.footer-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-elements a {
+    color: white;
+}
+
+.footer-elements a:hover {
+    color: #9356dc;
+}
+
+.footer-elements span {
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 
 /****** Media queries ***********/
 /* Medium devices (tablette, +/equal than 768 px) */
@@ -284,6 +304,10 @@ a {
 .body-container {
     max-width: 1600px;
     width: 100%;
+}
+
+.first-section h2 {
+    font-size: 30px;
 }
 
 .steps-container {
@@ -314,9 +338,17 @@ a {
 /* larger screen devices (desktop, +/equal than 1024px)) */
 @media (min-width: 1024px) {
 
+.first-section h2 {
+    font-size: 40px;
+}    
+
 .second-section h2 {
     text-align-last: left;
     padding-left: 234px;
+}
+
+.restaurants-section {
+    padding-bottom: 30px;
 }
 
 .restaurants-section h2 {
@@ -333,8 +365,22 @@ a {
     gap: 50px 100px;
     margin-left: 180px;
     margin-right: 180px;
+}
 
-    }
+.footer-section {
+    text-align: end;
+}
+.footer-elements {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
 
+.footer-elements span {
+    order: 5;
+    padding-left: 60px;
+}
 
 }
