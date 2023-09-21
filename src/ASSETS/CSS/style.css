@@ -15,6 +15,10 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /****** Header ***********/
 
 .header {
@@ -51,7 +55,7 @@ body {
     padding-right: 17px;
 }
 
-/****** Section btn rose ***********/
+/****** First Section ***********/
 
 .first-section {
     display: flex;
@@ -59,6 +63,10 @@ body {
     align-items: center;
     text-align: center;
     background: #eeeeee94;
+}
+
+.first-section a {
+    color: white;
 }
 
 .first-section h2 {
@@ -94,6 +102,11 @@ body {
     cursor: pointer;
 }
 
+.button:hover {
+    transform: scale(1.030);
+    transition: ease-in-out 0.3s;
+}
+
 /****** Section Fonctionnement ***********/
 
 .second-section h2 {
@@ -127,6 +140,16 @@ body {
     width: 322px;
     line-height: 33px;
     white-space: nowrap;
+}
+
+.grey-button:hover {
+    background-color: white;
+    transform: scale(1.030);
+    transition: ease-in-out 0.3s;
+}
+
+.grey-button:hover i {
+    color: #9356dc;
 }
 
 .grey-button i {
@@ -196,6 +219,12 @@ body {
     margin-bottom: 18px;
 }
 
+.restaurants-cards:hover {
+    transform: scale(1.010);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
 .restaurants-cards span {
     position: absolute;
     background-color: #99E2D0;
@@ -249,11 +278,11 @@ body {
 
 
 /****** Media queries ***********/
-/* Medium devices (desktop, +/equal than 768 px) */
-@media (min-width: 769px) {
+/* Medium devices (tablette, +/equal than 768 px) */
+@media (min-width: 768px) {
 
 .body-container {
-    max-width: 4000px;
+    max-width: 1600px;
     width: 100%;
 }
 
@@ -272,8 +301,6 @@ body {
 }
 
 .restaurants-section-cards {
-    display: flex;
-    flex-direction: column;
     margin-left: 18%;
     margin-right: 18%;
 }
@@ -282,6 +309,32 @@ body {
     text-align: center;
 }
 
+}
+
+/* larger screen devices (desktop, +/equal than 1024px)) */
+@media (min-width: 1024px) {
+
+.second-section h2 {
+    text-align-last: left;
+    padding-left: 234px;
+}
+
+.restaurants-section h2 {
+    text-align-last: left;
+    padding-left: 234px;
+    margin-left: 0px;
+    margin-bottom: 28px;
+}
+
+.restaurants-section-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+
+    }
 
 
 }
