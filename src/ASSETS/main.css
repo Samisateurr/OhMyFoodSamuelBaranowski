@@ -1,0 +1,48 @@
+.header {
+  box-shadow: 0px 5px 5px lightgrey;
+  margin-bottom: 5px;
+  text-align: center;
+  height: 63px;
+}
+
+.header img {
+  width: 162px;
+  height: 32px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.footer-section {
+  background-color: #353535;
+  color: white;
+  padding-left: 25px;
+  padding-top: 22px;
+  padding-right: 25px;
+  padding-bottom: 22px;
+}
+
+.footer-section i {
+  padding-right: 10px;
+}
+
+.footer-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-elements a {
+  color: white;
+}
+
+.footer-elements a:hover {
+  color: #9356dc;
+}
+
+.footer-elements span {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
