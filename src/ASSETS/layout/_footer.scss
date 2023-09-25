@@ -30,3 +30,34 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+/****** Media queries ***********/
+/* Medium devices (tablette, +/equal than 768 px) */
+@media (min-width: 768px) {
+
+    .footer-section {
+        text-align: center;
+    }
+
+}
+
+/* larger screen devices (desktop, +/equal than 1024px)) */
+@media (min-width: 1024px) {
+
+.footer-section {
+    text-align: end;
+}
+.footer-elements {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.footer-elements span {
+    order: 5;
+    padding-left: 60px;
+}
+
+}
