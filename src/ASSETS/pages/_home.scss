@@ -2,6 +2,30 @@
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
+    height: 50px;
+}
+
+.location input {
+    border: none;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.location form {
+    margin-top: 12px;
+}
+
+.location i {
+    position: relative;
+    left: 19px;
+}
+
+input:focus, textarea:focus
+{
+    border: none;
+    outline-offset: 0px;
+    outline: none;
+    
 }
 
 .location p {
@@ -10,9 +34,6 @@
     color: #353535;
 }
 
-.location i {
-    padding-right: 17px;
-}
 
 /****** First Section ***********/
 
@@ -144,13 +165,12 @@
     position: absolute;
     background-color: #99E2D0;
     color: #008766;
-    padding-top: 7px;
-    padding-right: 9px;  
-    padding-bottom: 7px;
-    padding-left: 9px;
-    right: 5px; 
-    margin-right: 12px;
-    margin-top: 13px;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    top: 15px;
+    right: 15px; 
+    padding-top: 5px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -172,8 +192,37 @@
 .restaurants-cards-content-icon i {
     position: absolute;
     right: 27px;
-    bottom: 27px;
+    bottom: 27px;  
+    
+        color: black;
+        transition: all 1s ease-out;
+      
+      
+      &:hover,
+      &:focus {
+        color: pink;
+        
+      }
 }
+
+.restaurants-cards-content-icon svg {
+    position: absolute;
+    right: 27px;
+    bottom: 27px;
+    color: black;
+    transition: all 5s ease-out;
+  
+  &:hover,
+  &:focus {
+    fill: pink;
+
+}
+}
+
+
+
+
+
 
 /****** Media queries ***********/
 /* Medium devices (tablette, +/equal than 768 px) */
@@ -220,7 +269,7 @@
     
     .second-section h2 {
         text-align-last: left;
-        padding-left: 234px;
+        padding-left: 184px;
     }
     
     .restaurants-section {
@@ -229,7 +278,7 @@
     
     .restaurants-section h2 {
         text-align-last: left;
-        padding-left: 234px;
+        padding-left: 184px;
         margin-left: 0px;
         margin-bottom: 28px;
     }
@@ -238,9 +287,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 50px 100px;
+        gap: 50px 70px;
         margin-left: 180px;
         margin-right: 180px;
+    }
+
+    .restaurants-cards {
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     
