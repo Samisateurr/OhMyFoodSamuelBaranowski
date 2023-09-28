@@ -193,31 +193,30 @@ input:focus, textarea:focus
     position: absolute;
     right: 27px;
     bottom: 27px;  
-    
-        color: black;
-        transition: all 1s ease-out;
-      
-      
-      &:hover,
-      &:focus {
-        color: pink;
-        
-      }
-}
-
-.restaurants-cards-content-icon svg {
-    position: absolute;
-    right: 27px;
-    bottom: 27px;
     color: black;
-    transition: all 5s ease-out;
-  
-  &:hover,
-  &:focus {
-    fill: pink;
+}
 
+.my-heart-full {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 100ms;
 }
+
+.my-heart-full:hover {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient($pinky-color, $purply-color);
+    background-clip: text;
 }
+
+.my-heart-full::after {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient($pinky-color, $purply-color);
+    background-clip: text;
+}
+
+
 
 
 

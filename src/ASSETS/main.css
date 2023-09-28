@@ -60,6 +60,7 @@ a {
   background-color: white;
   transform: scale(1.03);
   transition: ease-in-out 0.3s;
+  box-shadow: 1px 6px 17px 1px lightgrey;
 }
 .grey-button:hover:hover i {
   color: #9356dc;
@@ -326,21 +327,28 @@ input:focus, textarea:focus {
   right: 27px;
   bottom: 27px;
   color: black;
-  transition: all 1s ease-out;
-}
-.restaurants-cards-content-icon i:hover, .restaurants-cards-content-icon i:focus {
-  color: pink;
 }
 
-.restaurants-cards-content-icon svg {
-  position: absolute;
-  right: 27px;
-  bottom: 27px;
-  color: black;
-  transition: all 5s ease-out;
+.my-heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 100ms;
 }
-.restaurants-cards-content-icon svg:hover, .restaurants-cards-content-icon svg:focus {
-  fill: pink;
+
+.my-heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.my-heart-full::after {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 /****** Media queries ***********/
