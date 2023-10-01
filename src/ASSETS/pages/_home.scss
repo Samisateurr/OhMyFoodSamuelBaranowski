@@ -127,6 +127,9 @@ input:focus, textarea:focus
         padding-left: 13px;
         margin-top: 5px;
         margin-bottom: 12px;
+        @media screen {
+            
+        }
     }
 }
 
