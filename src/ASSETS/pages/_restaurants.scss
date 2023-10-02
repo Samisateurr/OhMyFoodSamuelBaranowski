@@ -42,29 +42,58 @@
         }
     }    
     @media (min-width: 1024px) {
-        padding-left: 19%;
+        padding-left: 18%;
         padding-right: 18%;
+        margin-left: 192px;
+        margin-right: 192px;
         & i {
-            right: 35%;
+            right: 27%;
     }
 }
 }
 
 .starter {
     padding-top: 40px;
-    padding-left: 10px;
+    padding-left: 15px;
+}
+
+.menu-style {
+     & h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+@media (min-width: 1024px) {
+    margin-left: 20%;
+    margin-right: 20%;
+}
 }
 
 .menu {
     background-color: #f6f6f6;
     margin-top: -99px;
+    @media (min-width: 1024px) {
+    margin-left: 192px;
+    margin-right: 192px;
+    }
+}
+
+.menu-underline {
+    width: 27px;
+    height: 3px;
+    background-color: #99e2d0;
+    margin: 0;
+    padding-left: 15px;
+    
 }
 
 .menu-cards {
     background-color: white;
     box-shadow: 2px 2px 2px lightgrey;
     border-radius: 20px 20px;
-    height: fit-content;
+    height: 69px;
     margin: 1rem;
     display: flex;
     flex-direction: row;
@@ -76,11 +105,28 @@
 }
 
 .menu-cards-txt {
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    & h3 { 
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        overflow: hidden;
+}  
+    & p {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        overflow: hidden;
+    }
 }
 
 .menu-cards-txt-infos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    }
+    
+.menus-cards-txt-infos-price {
+    right: 5px;
 }
