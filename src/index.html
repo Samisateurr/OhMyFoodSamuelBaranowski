@@ -11,10 +11,18 @@
     <link rel="stylesheet" href="https://fontawesome.com/v5/icons/heart?f=classic&s=light&pc=%23000000">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>OhMyFood</title>
+    
 </head>
 
 <body>
-    <div class="body-container">
+    
+        <div id="loader-wrapper">
+            <span id="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <div class="body-container">
+            
+
         <header>
             <div class="header">
 
@@ -117,7 +125,7 @@
                     </article>
 
                     <article class="restaurants-cards">
-                        <a href="Restaurants/a-la-francaise.html"></a>
+                        <a href="Restaurants/a-la-francaise.html">
                         <img src="ASSETS/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
                         <div class="restaurants-cards-content">
                             <h3>À la Française</h3>
@@ -127,6 +135,7 @@
                                 <i class="fa-solid fa-heart fa-2x my-heart-full"></i>
                             </div>
                         </div>
+                    </a>
                     </article>
 
                     <article class="restaurants-cards">
@@ -160,6 +169,13 @@
             </div>
         </footer>
     </div>
+
+<script>
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow")
+    });
+</script>
+
 </body>
 
 

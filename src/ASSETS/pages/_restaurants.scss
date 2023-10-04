@@ -105,19 +105,24 @@
 }
 
 .menu-cards-txt {
-    overflow: hidden;
-    text-overflow: ellipsis;
     & h3 { 
         margin-top: 10px;
         margin-bottom: 5px;
         margin-left: 20px;
         overflow: hidden;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
 }  
     & p {
         margin-top: 0px;
         margin-bottom: 5px;
         margin-left: 20px;
         overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
     }
 }
 

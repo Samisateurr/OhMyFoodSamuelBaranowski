@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0px;
+  animation: transitionIn 2.5s;
 }
 
 .body-container {
@@ -38,6 +39,13 @@ a {
   transition: ease-in-out 0.3s;
   background: linear-gradient(182deg, #ff93e1, #a16be0);
   box-shadow: 2px 6px 12px 2px rgba(0, 0, 0, 0.25);
+}
+
+.btn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .grey-button {
@@ -525,21 +533,24 @@ input:focus, textarea:focus {
   text-overflow: ellipsis;
 }
 
-.menu-cards-txt {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .menu-cards-txt h3 {
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 20px;
   overflow: hidden;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
 }
 .menu-cards-txt p {
   margin-top: 0px;
   margin-bottom: 5px;
   margin-left: 20px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .menu-cards-txt-infos {
