@@ -570,11 +570,16 @@ input:focus, textarea:focus {
   text-overflow: ellipsis;
 }
 
+.menu-cards-txt {
+  width: 100%;
+}
 .menu-cards-txt h3 {
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 20px;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -584,18 +589,46 @@ input:focus, textarea:focus {
   margin-bottom: 5px;
   margin-left: 20px;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
 }
 
-.menu-cards-txt-infos {
+.menu-cards-price p {
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.menu-cards-bis {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 15px;
+  transform: translateX(65px);
+  transition: all 700ms;
+}
+.menu-cards-bis:hover {
+  transform: translateX(4px);
 }
 
-.menus-cards-txt-infos-price {
-  right: 5px;
+.menu-cards-price p {
+  padding-top: 19px;
+  font-weight: 700;
+}
+
+.menu-cards-check {
+  color: #f6f6f6;
+  background-color: #99e2d0;
+  font-size: xx-large;
+  white-space: nowrap;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  cursor: pointer;
+  width: 60px;
+}
+.menu-cards-check i {
+  padding-top: 18px;
+  padding-left: 11px;
 }/*# sourceMappingURL=main.css.map */
