@@ -5,6 +5,23 @@
         width: 162px;
         height: 32px;
     }
+    & a {
+        position: relative;
+        top: -8px;
+        right: 15px;
+        font-size: x-large;
+        color: black;
+    }
+    @media (min-width: 768px) {
+        & a {
+            right: 264px;
+        }
+}
+    @media (min-width: 1024px) {
+        & a {
+            right: 395px;
+        }
+}
 }
 
 .logo {

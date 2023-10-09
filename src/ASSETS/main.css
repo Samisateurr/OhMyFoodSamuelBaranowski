@@ -119,6 +119,23 @@ a {
   width: 162px;
   height: 32px;
 }
+.header a {
+  position: relative;
+  top: -8px;
+  right: 15px;
+  font-size: x-large;
+  color: black;
+}
+@media (min-width: 768px) {
+  .header a {
+    right: 264px;
+  }
+}
+@media (min-width: 1024px) {
+  .header a {
+    right: 395px;
+  }
+}
 
 .logo {
   margin-top: 20px;
@@ -472,6 +489,14 @@ input:focus, textarea:focus {
   }
 }
 
+.main-picture i {
+  position: absolute;
+  top: 23px;
+  left: 14px;
+  color: black;
+  font-size: x-large;
+}
+
 .main-title {
   display: flex;
   justify-content: space-between;
@@ -492,6 +517,7 @@ input:focus, textarea:focus {
   position: absolute;
   right: 27px;
   bottom: 27px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .main-title {
@@ -571,7 +597,12 @@ input:focus, textarea:focus {
 }
 
 .menu-cards-txt {
-  width: 100%;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .menu-cards-txt {
+    width: 70%;
+  }
 }
 .menu-cards-txt h3 {
   margin-top: 10px;

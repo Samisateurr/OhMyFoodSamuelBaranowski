@@ -11,6 +11,14 @@
 }
 }
 
+.main-picture i {
+    position: absolute;
+    top: 23px;
+    left: 14px;
+    color: black;
+    font-size: x-large;
+}
+
 .main-title {
     display: flex;
     justify-content: space-between;
@@ -30,6 +38,7 @@
         position: absolute;
         right: 27px;
         bottom: 27px; 
+        cursor: pointer;
     }
     @media (min-width: 768px) {
         justify-content: center;
@@ -105,8 +114,10 @@
 }
 
 .menu-cards-txt {
-
-    width: 100%;
+    width: 50%;
+    @media (min-width: 768px) {
+        width: 70%;
+    }
     & h3 { 
         margin-top: 10px;
         margin-bottom: 5px;
