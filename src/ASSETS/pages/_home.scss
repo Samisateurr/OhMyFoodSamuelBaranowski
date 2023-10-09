@@ -9,6 +9,7 @@
         border: none;
         background-color: #eaeaea;
         text-align: center;
+        font-weight: 600;
     }
     & form {
         margin-top: 12px;
@@ -171,6 +172,9 @@ input:focus, textarea:focus
         height: 174px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+    & a {
+        color: black;
     }
 }
 
