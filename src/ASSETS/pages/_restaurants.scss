@@ -111,12 +111,20 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
+    & :hover  .menu-cards-bis {
+            transform: translateX(0px);
+            transition: all 700ms;
+        
+
+
+
+    }
 }
 
 .menu-cards-txt {
-    width: 50%;
+    overflow: hidden;
     @media (min-width: 768px) {
-        width: 70%;
+       
     }
     & h3 { 
         margin-top: 10px;
@@ -156,9 +164,9 @@
     justify-content: space-between;
     gap: 15px;
     transform: translateX(65px);
-    transition: all 700ms;
+
     &:hover {
-        transform: translateX(4px);
+        
     }
 }
 
