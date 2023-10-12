@@ -111,13 +111,10 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-    & :hover  .menu-cards-bis {
+    &:hover  .menu-cards-bis {
             transform: translateX(0px);
             transition: all 700ms;
         
-
-
-
     }
 }
 
