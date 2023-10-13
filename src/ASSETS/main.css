@@ -60,9 +60,14 @@ a {
   border-radius: 20px 20px;
   text-align: center;
   height: 72px;
-  width: 322px;
+  width: 85%;
   line-height: 33px;
   white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .grey-button {
+    width: 322px;
+  }
 }
 .grey-button:hover {
   background-color: white;
@@ -86,6 +91,7 @@ a {
   background: #333333;
   transition: opacity 0.75s, visibility 0.75s;
   opacity: 0;
+  display: none;
 }
 
 .loader--hidden {
@@ -364,6 +370,11 @@ input:focus, textarea:focus {
   margin-left: 17px;
   margin-right: 18px;
   margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .restaurants-cards {
+    width: 100%;
+  }
 }
 .restaurants-cards:hover {
   transform: scale(1.01);
@@ -653,6 +664,7 @@ input:focus, textarea:focus {
   gap: 15px;
   transform: translateX(65px);
 }
+
 .menu-cards-price p {
   padding-top: 19px;
   font-weight: 700;
