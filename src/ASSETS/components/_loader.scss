@@ -7,10 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #333333;
+  background: #ffffff;
   transition: opacity 0.75s, visibility 0.75s;
   opacity: 0;
-  display: none;
+  pointer-events: none;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-duration: 4500ms;
+  animation-iteration-count: 1;
   
 }
 
@@ -30,6 +34,7 @@
   animation-delay: 3s;
   animation: fade-out 3s 3s ease-out forwards;
   animation-duration: 5s;
+  
 }
 
 @keyframes loading {
