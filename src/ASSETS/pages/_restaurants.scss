@@ -98,7 +98,7 @@
     
 }
 
-.menu-cards {
+.menu-cards-entree {
     background-color: white;
     box-shadow: 2px 2px 2px lightgrey;
     border-radius: 20px 20px;
@@ -111,6 +111,85 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
+    animation-name: appear;
+    animation: appear 2s ease;
+    z-index: 1;
+    @keyframes appear {
+    0% {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+}
+    &:hover  .menu-cards-bis {
+            transform: translateX(0px);
+            transition: all 700ms;
+        
+    }
+}
+
+.menu-cards-plat {
+    background-color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    border-radius: 20px 20px;
+    height: 69px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 2000ms;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation-name: appear;
+    animation: appear 4s ease;
+    z-index: 1;
+    @keyframes appear {
+    0% {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+}
+    &:hover  .menu-cards-bis {
+            transform: translateX(0px);
+            transition: all 700ms;
+        
+    }
+}
+
+.menu-cards-dessert {
+    background-color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    border-radius: 20px 20px;
+    height: 69px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 2000ms;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation-name: appear;
+    animation: appear 4.0s ease-in-out;
+    z-index: 1;
+    @keyframes appear {
+    0% {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+}
     &:hover  .menu-cards-bis {
             transform: translateX(0px);
             transition: all 700ms;
