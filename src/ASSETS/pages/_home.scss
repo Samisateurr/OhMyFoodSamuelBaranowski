@@ -199,6 +199,7 @@ input:focus, textarea:focus
     opacity: 0;
     transition-property: all;
     transition-duration: 100ms;
+    -webkit-background-clip: text !important;
  &:hover {
     opacity: 1;
     color: transparent;
